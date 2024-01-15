@@ -21,9 +21,9 @@ public class Main {
 			Chair c = af.createChair();
 			Sofa s = af.createSofa();
 			
-			
-			
 		}
+
+		sc.close();
 		
 //		if(input == "Italian") {
 //			new ItalianFurniture();
