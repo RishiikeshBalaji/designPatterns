@@ -1,4 +1,4 @@
-package behavioural.command;
+package behavioral.command;
 
 public class Car {
 
