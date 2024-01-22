@@ -9,5 +9,4 @@ public class Service implements Transaction{
    public void withdraw() {
         System.out.println("Service: Main logic for withdrawal");
     }
-
 }
