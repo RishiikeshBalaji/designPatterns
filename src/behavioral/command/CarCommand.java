@@ -7,6 +7,7 @@ public class CarCommand implements Command{
     public CarCommand(Car c){
         this.c = c;
     }
+    
     public void execute(){
         c.accelarate();
     }
