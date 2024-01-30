@@ -8,10 +8,10 @@ public class Main {
             
             House l = new House("living","kitchen");
             RemoteCommand r = new RemoteCommand(l);
+            Scanner sc = new Scanner(System.in);
     
             while(true){
                 System.out.println("Enter the button");
-                Scanner sc = new Scanner(System.in);
                 String code;
                 code = sc.next();
                 if(code.equals("1")){
@@ -32,9 +32,10 @@ public class Main {
                 else{
                     System.out.println("Invalid code");
                 }
-
-                sc.close();
             }
+        
+        sc.close();
+            
     }
 
 }
