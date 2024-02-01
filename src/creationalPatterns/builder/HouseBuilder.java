@@ -2,16 +2,14 @@ package creationalPatterns.builder;
 
 public class HouseBuilder {
 	
-	int no_of_rooms,windows,doors;
+	int windows,doors;
 	String paint;
 	Boolean hasSwimmingPool,hasGarden,hasStatues;
-	
-	
-	
-	public void setNo_of_rooms(int no_of_rooms) {
-		this.no_of_rooms = no_of_rooms;
-	}
+	Room r;
 
+	public void set_room(Room r) {
+		this.r = r;
+	}
 
 
 	public void setWindows(int windows) {
@@ -43,7 +41,6 @@ public class HouseBuilder {
 	}
 
 
-
 	public void setHasStatues(Boolean hasStatues) {
 		this.hasStatues = hasStatues;
 	}
@@ -51,10 +48,8 @@ public class HouseBuilder {
 
 
 	public House houseBuild() {
-		return new House(no_of_rooms,windows,doors,paint,hasSwimmingPool,hasGarden,hasStatues);
+		return new House(r,windows,doors,paint,hasSwimmingPool,hasGarden,hasStatues);
 	}
-	
-	
 	
 
 }

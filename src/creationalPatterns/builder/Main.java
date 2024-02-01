@@ -7,7 +7,7 @@ class Main {
 		System.out.println("Hello world");
 
 		HouseBuilder houseBuilder = new HouseBuilder();
-		houseBuilder.setNo_of_rooms(5);
+		houseBuilder.set_room(new Room());
 		houseBuilder.setWindows(10);
 		houseBuilder.setDoors(5);
 		houseBuilder.setPaint("Red");
@@ -15,8 +15,12 @@ class Main {
 		houseBuilder.setHasGarden(true);
 		houseBuilder.setHasStatues(true);
 
+		
+
 		House house = houseBuilder.houseBuild();
 		System.out.println(house);
+
+		house.no_of_rooms.get_info_of_room();
 		
 	}
 }

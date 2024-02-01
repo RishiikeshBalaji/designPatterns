@@ -2,10 +2,11 @@ package creationalPatterns.builder;
 
 class House {
 	
-	int no_of_rooms,windows,doors;
+	int windows,doors;
+	Room no_of_rooms;
 	String paint;
 	Boolean hasSwimmingPool,hasGarden,hasStatues;
-	public House(int no_of_rooms, int windows, int doors, String paint, Boolean hasSwimmingPool, Boolean hasGarden,
+	public House(Room no_of_rooms, int windows, int doors, String paint, Boolean hasSwimmingPool, Boolean hasGarden,
 			Boolean hasStatues) {
 		
 		System.out.println("Building house");
